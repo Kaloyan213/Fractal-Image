@@ -1,7 +1,7 @@
 #include "Bitmap.h"
 
 namespace bitmap {
-	Bitmap::Bitmap(int width, int height) :_width{ width }, _height{ height },
+	Bitmap::Bitmap(int width, int height) :_width(width ), _height( height ),
 		_pixels{ new uint8_t[width * height * 3]() } {};
 
 	bool Bitmap::write(std::string fileName) {
